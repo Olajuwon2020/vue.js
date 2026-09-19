@@ -14,6 +14,7 @@ header{
     top: 0;
     background-color: #1a1a1a;
     border-bottom: 1px solid #363636;
+    z-index: 1;
 }
 
 nav{
@@ -33,6 +34,11 @@ nav{
     align-items: center;   
     color: white;
     cursor: pointer;
+}
+
+.nav-logo img{
+    background-color: transparent;
+    padding-right: 10px;
 }
 
 .nav-logo:hover{
@@ -241,7 +247,7 @@ section{
 
 .bi-arrow-right-short{
     color: #96c3e4;
-    background-color: #2f2f2f;
+    background-color: transparent;
 }
 
 .bi-arrow-right-short:hover{
@@ -250,7 +256,7 @@ section{
 
 .bi-box-arrow-up-right{
     color: #aac8e4;
-    background-color: #2f2f2f;
+    background-color: transparent;
     font-size: 15px;
 }
 
@@ -311,12 +317,13 @@ section{
 .container2>h3{
     color: #e1e1e1;
     font-size: 20px;
+    z-index: 0;
 }
 
 .first-img-container{
     width: 100%;
     min-height: 400px;
-    border: 1px solid;
+    /* border: 1px solid; */
     margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -331,24 +338,67 @@ section{
     height: 120px;
     display: grid;
     place-content: center;
+    filter: grayscale(100%);
 }
 
 .first-img-container>div:hover{
     background-color: white;
+    filter: grayscale(0);
 }
 
 .first-img-container>div>img {
-    filter: grayscale(100%);
-    background-color: #242424;
-}
-
-.first-img-container>div>img:hover {
-    filter: grayscale(0);
-    background-color: white;
+    background-color: transparent;
 }
 
 .first-img-container>div>p{
-    background-color: #242424;
+    background-color: transparent;
     color: #9f9f9f;
     font-size: 13px;
 }
+
+.container3{
+    width: 70%;
+    min-height: 200px;
+    /* border: 1px solid; */
+    margin: 50px auto;
+    padding-left: 30px;
+}
+
+.container3>h3{
+    color: #e1e1e1;
+    font-size: 20px;
+}
+
+.second-img-container{
+    width: 100%;
+    min-height: 500px;
+    /* border: 1px solid; */
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4px;
+}
+
+.second-img-container>div{
+    background-color: #242424;
+    height: 85px;
+    display: grid;
+    place-content: center;
+    filter: grayscale(100%);
+
+}
+
+.second-img-container>div:hover{
+    background-color: white;
+    filter: grayscale(0);
+}
+
+.second-img-container>div>img{
+    background-color: transparent;
+}
+
+.second-img-container>div>p{
+    background-color: transparent;
+    color: #909597;
+}
+
